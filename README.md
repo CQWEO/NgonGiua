@@ -73,28 +73,28 @@ YOUHUB["d"]["Name"] = [[LoadingFramework]];
 YOUHUB["e"] = Instance.new("LocalScript", YOUHUB["a"]);
 YOUHUB["e"]["Name"] = [[Entities]];
 YOUHUB["f"] = Instance.new("UICorner", YOUHUB["9"]);
-OsirisHub["f"]["Name"] = [[Corner]];
-OsirisHub["f"]["CornerRadius"] = UDim.new(0, 4);
-OsirisHub["10"] = Instance.new("UIStroke", OsirisHub["9"]);
-OsirisHub["10"]["Color"] = Color3.fromRGB(101, 101, 101);
-OsirisHub["10"]["Thickness"] = 3;
-OsirisHub["10"]["Name"] = [[Stroke]];
-OsirisHub["11"] = Instance.new("TextLabel", OsirisHub["2"]);
-OsirisHub["11"]["TextWrapped"] = true;
-OsirisHub["11"]["BorderSizePixel"] = 0;
-OsirisHub["11"]["RichText"] = true;
-OsirisHub["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-OsirisHub["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-OsirisHub["11"]["TextSize"] = 30;
-OsirisHub["11"]["TextColor3"] = Color3.fromRGB(114, 114, 114);
-OsirisHub["11"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-OsirisHub["11"]["Size"] = UDim2.new(0, 200, 0, 50);
-OsirisHub["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-OsirisHub["11"]["Text"] = [[----]];
-OsirisHub["11"]["Name"] = [[PercentAmount]];
-OsirisHub["11"]["BackgroundTransparency"] = 1;
-OsirisHub["11"]["Position"] = UDim2.new(0.5, 0, 0.75, 10);
-OsirisHub["12"] = Instance.new("LocalScript", OsirisHub["11"]);
+YOUHUB["Name"] = [[Corner]];
+YOUHUB["f"]["CornerRadius"] = UDim.new(0, 4);
+YOUHUB["10"] = Instance.new("UIStroke", YOUHUB["9"]);
+YOUHUB["10"]["Color"] = Color3.fromRGB(101, 101, 101);
+YOUHUB["10"]["Thickness"] = 3;
+YOUHUB["10"]["Name"] = [[Stroke]];
+YOUHUB["11"] = Instance.new("TextLabel", YOUHUB["2"]);
+YOUHUB["11"]["TextWrapped"] = true;
+YOUHUB["11"]["BorderSizePixel"] = 0;
+YOUHUB["11"]["RichText"] = true;
+YOUHUB["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+YOUHUB["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+YOUHUB["11"]["TextSize"] = 30;
+YOUHUB["11"]["TextColor3"] = Color3.fromRGB(114, 114, 114);
+YOUHUB["11"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+YOUHUB["11"]["Size"] = UDim2.new(0, 200, 0, 50);
+YOUHUB["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+YOUHUB["11"]["Text"] = [[----]];
+YOUHUB["11"]["Name"] = [[PercentAmount]];
+YOUHUB["11"]["BackgroundTransparency"] = 1;
+YOUHUB["11"]["Position"] = UDim2.new(0.5, 0, 0.75, 10);
+YOUHUB["12"] = Instance.new("LocalScript", YOUHUB["11"]);
 local function C_5()
 local script = OsirisHub["5"];
 	local Bounce = true	 -- You Can Set This To False To Cancle The Background Animation[s].
@@ -110,7 +110,7 @@ local script = OsirisHub["5"];
 end;
 task.spawn(C_5);
 local function C_8()
-local script = OsirisHub["8"];
+local script = YOUHUB["8"];
 	local BeginingSize = UDim2.new(0, 5, 0, 5)
 	local MainSize = UDim2.new(0, 400, 0, 300)
 	local SpreadSize = UDim2.new(0, 400, 0, 5)
@@ -137,7 +137,7 @@ local script = OsirisHub["8"];
 end;
 task.spawn(C_8);
 local function C_d()
-local script = OsirisHub["d"];
+local script = YOUHUB["d"];
 	script.Parent.Percentage.Value = 0
 	while wait() do
 		script.Parent:TweenSize(
@@ -151,7 +151,7 @@ local script = OsirisHub["d"];
 end;
 task.spawn(C_d);
 local function C_e()
-local script = OsirisHub["e"];
+local script = YOUHUB["e"];
 	local Status = script.Parent.Percentage
 	local num = nil
 	while not (Status.Value >= 100) do
@@ -180,10 +180,10 @@ local script = OsirisHub["e"];
 end;
 task.spawn(C_e);
 local function C_12()
-local script = OsirisHub["12"];
+local script = YOUHUB["12"];
 	while wait() do
 		script.Parent.Text = (script.Parent.Parent.LoadingFrame.LoadingBar.Percentage.Value .. "%")
 	end
 end;
 task.spawn(C_12);
-return OsirisHub["1"], require;
+return YOUHUB["1"], require;
